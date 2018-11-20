@@ -1,0 +1,8 @@
+{
+  "name": "Вася",
+  "age": "456",
+  "roles": {
+    "isAdmin": "564",
+    "isEditor": "sdf"
+  }
+}
