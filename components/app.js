@@ -1,10 +1,10 @@
-import getData from './getData.js';
-
+import getDataAsync from './getDataAsync.js';
 
 const currencyApp = (function () {
 
-
-  let data = getData('../data/data.json');
+  getDataAsync('./data/data.json').then(data => {
+    console.log(data);
+  });
 
 
 })();

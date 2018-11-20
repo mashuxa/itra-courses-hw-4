@@ -1,8 +1,50 @@
-{
-  "name": "Вася",
-  "age": "456",
-  "roles": {
-    "isAdmin": "564",
-    "isEditor": "sdf"
+[
+  {
+    "date": "01-01-2018",
+    "currencyValue": "20.10"
+  },
+  {
+    "date": "01-02-2018",
+    "currencyValue": "19.10"
+  },
+  {
+    "date": "01-03-2018",
+    "currencyValue": "18.10"
+  },
+  {
+    "date": "01-04-2018",
+    "currencyValue": "22.10"
+  },
+  {
+    "date": "01-05-2018",
+    "currencyValue": "21.10"
+  },
+  {
+    "date": "01-06-2018",
+    "currencyValue": "20.10"
+  },
+  {
+    "date": "01-07-2018",
+    "currencyValue": "19.10"
+  },
+  {
+    "date": "01-08-2018",
+    "currencyValue": "20.10"
+  },
+  {
+    "date": "01-09-2018",
+    "currencyValue": "20.10"
+  },
+  {
+    "date": "01-10-2018",
+    "currencyValue": "23.10"
+  },
+  {
+    "date": "01-11-2018",
+    "currencyValue": "21.10"
+  },
+  {
+    "date": "01-12-2018",
+    "currencyValue": "20.10"
   }
-}
+]
