@@ -1,19 +1,21 @@
 html {
   height: 100%;
-  font: 15px sans-serif; }
+  font: 15px sans-serif;
+}
 
 body {
   min-height: 100%;
   margin: 0;
-  display: flex; }
+  display: flex;
+}
 
 .canvas {
   border-left: 1px solid gray;
-  border-bottom: 1px solid gray; }
-  .canvas__wrapper {
+  border-bottom: 1px solid gray;
+  &__wrapper {
     outline: 1px dotted gray;
     margin: auto;
     width: 90vw;
-    height: 50vw; }
-
-/*# sourceMappingURL=style.css.map */
+    height: 50vw;
+  }
+}
