@@ -16,7 +16,7 @@ const currencyApp = (function () {
   // getDataAsync('./data/data.json').then(data => {
   //   // document.body.appendChild(new CurrencyGraph(data));
   // });
-  let graph = new Graph(document.getElementById('canvas'), coordinates, 0);
+  let graph = new Graph(document.getElementById('canvas'), coordinates, 0.5);
   graph.draw();
 
   window.g = graph;
