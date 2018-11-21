@@ -28,8 +28,7 @@ export default class Graph {
     const maxVal = this.maxValues;
     const minVal = this.minValues;
     const canvasWidth = this.node.parentElement.offsetWidth;
-    const canvasHeight = this.node.parentElement.offsetHeight;
-    const bottomMargin = minVal.y;
+    const canvasHeight = this.node.parentElement.offsetHeight; 
     this.node.width = canvasWidth;
     this.node.height = canvasHeight;
     this.ctx.clearRect(0, 0, canvasWidth, canvasHeight);
@@ -41,14 +40,14 @@ export default class Graph {
 
 
     this.ctx.beginPath();
-    this.ctx.moveTo((this.coordinates[0].x - minVal.x) * unitSize.x, canvasHeight - (this.coordinates[0].y - bottomMargin) * unitSize.y);
+    this.ctx.moveTo((this.coordinates[0].x - minVal.x) * unitSize.x, canvasHeight - (this.coordinates[0].y - minVal.y) * unitSize.y);
     this.coordinates.forEach((coordinate) => {
-      this.ctx.lineTo((coordinate.x - minVal.x) * unitSize.x, canvasHeight - (coordinate.y - bottomMargin) * unitSize.y);
+      this.ctx.lineTo((coordinate.x - minVal.x) * unitSize.x, canvasHeight - (coordinate.y - minVal.y) * unitSize.y);
     });
     this.ctx.stroke();
     this.ctx.closePath();
 
 
-    console.log(bottomMargin);
+    console.log(minVal.y);
   }
 }
