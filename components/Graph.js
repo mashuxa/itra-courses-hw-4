@@ -44,6 +44,10 @@ export default class Graph {
     this.ctx.stroke();
     this.ctx.closePath();
     this.drawPoints(canvasCoordinates);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 729fd0cca634eabecb0338842235cd3c30786589
   }
 
   drawPoints(canvasCoordinates, pointClass = 'canvas__point') {
