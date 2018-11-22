@@ -7,12 +7,31 @@ body {
   margin: 0;
   display: flex; }
 
-.canvas {
+.canvas__wrapper {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  height: 60%;
   border-left: 1px solid gray;
   border-bottom: 1px solid gray; }
-  .canvas__wrapper {
-    margin: auto;
-    width: 90%;
-    height: 60%; }
+.canvas__point {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(100, 100, 255, 0.25);
+  cursor: pointer; }
+  .canvas__point:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    content: '';
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    background-color: #6464ff; }
 
 /*# sourceMappingURL=style.css.map */

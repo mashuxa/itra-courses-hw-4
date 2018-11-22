@@ -10,11 +10,35 @@ body {
 }
 
 .canvas {
-  border-left: 1px solid gray;
-  border-bottom: 1px solid gray;
   &__wrapper {
+    position: relative;
     margin: auto;
     width: 90%;
     height: 60%;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+
+  &__point {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(100, 100, 255, 0.25);
+    cursor: pointer;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      content: '';
+      border-radius: 50%;
+      width: 50%;
+      height: 50%;
+      background-color: rgba(100, 100, 255, 1);
+    }
   }
 }
