@@ -2,7 +2,6 @@ import Graph from './Graph.js';
 import Coordinate from './Coordinate.js';
 
 (function () {
-
   fetch('./data/data.json')
     .then(response => response.json())
     .then(data => {
@@ -14,6 +13,7 @@ import Coordinate from './Coordinate.js';
 
       let graph = new Graph(canvas, graphValues, MIN_VAL_Y);
       graph.drawGraph();
+
 
       window.addEventListener('resize', () => {
         graph.drawGraph();
